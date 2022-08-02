@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+:root{
+     --Softblue: hsl(215, 51%, 70%);
+     --Cyan: hsl(178, 100%, 50%);
+     --Verydarkbluemain : hsl(217, 54%, 11%);
+     --Verydarkbluecard : hsl(216, 50%, 16%);
+     --Verydarkblueline : hsl(215, 32%, 27%);
+     --Whit: hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--Verydarkbluemain);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Verydarkbluecard);
+    border-radius:15px;
+    padding: 20px;
+
+
+
+}
+.image{
+    position: relative;
+}
+.overlayimg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    border-radius:10px;
+}
+#mainimg{
+    display: block;
+    width: 100%;
+    border-radius:10px;
+}
+#overlay{
+    position: relative;
+    left: 44%;
+    top: 44%;
+    opacity: 1;
+    width: 40px;
+    z-index: 1;
+}
+
+.overlayimg:hover{
+    background-color:hsla(178, 100%, 50%, 0.417);
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+.details{
+    padding-top: 10px;
+    border-bottom: 2px solid var(--Verydarkblueline);
+}
+#name{
+    text-transform: capitalize;
+    color: var(--Whit);
+    font-weight: 600;
+    line-height:3em;
+    text-decoration: none;
+}
+#name:hover{
+    color:var(--Cyan);
+}
+#data{
+    color: var(--Softblue);
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.pblock{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:20px 0;
+}
+
+#ethereumdetails{
+    color:var(--Cyan);
+}
+#ethereumdetails img {
+padding-right:5px ;
+width: 10px;
+}
+#ethereumdays{
+    color: var(--Softblue);
+}
+#ethereumdays img{
+    width: 15px;
+    position: relative;
+    top: 1px;
+    right: 2px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--Softblue);
+    padding:15px 0 ;
+}
+footer img{
+width: 30px;
+border: 1px solid var(--Whit);
+border-radius: 50%;
+}
+footer p{
+    padding:0 15px ;
+}
+footer a{
+    text-decoration: none;
+    color: var(--Whit);
+    cursor: pointer;
+}
+footer a:hover{
+    color: var(--Cyan);
+}
+
